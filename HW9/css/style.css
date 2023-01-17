@@ -1,0 +1,101 @@
+.slider,
+.slider-line {
+    width: 1000px;
+    height: 563px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+}
+
+.slide {
+    width: 1000px;
+    min-height: 563px;
+    height: fit-content;
+    position: absolute;
+    transition: all 1s ease;
+    left: 0;
+    top: 0;
+}
+
+.btn-prev,
+.btn-next {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+}
+
+.btn-prev {
+    left: 50px;
+}
+
+.btn-next {
+    right: 50px;
+}
+
+.backdrop {
+    background: rgba(0,0,0,.7);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    display: none;
+    z-index: 3;
+    padding: 10px;
+    text-align: right;
+}
+
+.modal-header,
+.modal-footer {
+    height: 25%;
+}
+
+.modal-body {
+    height: 50%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* .modal svg:hover {
+    transform: rotate(360deg);
+    transition: all 1s ease-in;
+} */
+
+.modal-footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.modal-footer button {
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.modal-footer button:hover {
+    background-color: brown;
+}
