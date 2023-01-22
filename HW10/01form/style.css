@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 100px auto;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: black;
+    width: 300px;
+    height: 480px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-block-start: 0;
+    margin-block-end: 1.5em;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+}
+
+input:not(.btn) {
+    background-color: inherit;
+    border: 2px solid rgb(182, 142, 212);
+    border-radius: 10px;
+    padding: .5rem;
+    color: white;
+}
+
+input:not(.btn)::placeholder {
+    color: lightgray;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: .5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.btn-register {
+    margin-top: 40px;
+    background-color: rgb(98, 0, 237);
+}
+
+.btn-register:hover {
+    background-color: rgb(139, 68, 237);
+}
+
+.btn-sign-in {
+    background-color: rgb(55, 0, 179);
+}
+
+.btn-sign-in:hover {
+    background-color: rgb(93, 58, 176);
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 600;
+    margin: 3em 0;
+}
+

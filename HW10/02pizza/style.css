@@ -1,0 +1,126 @@
+header {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 4em;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: 1em 0;
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+    border: none;
+    width: 30%;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px rgb(0 0 0 / 50%);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .title {
+    height: 35%;
+}
+
+.card-body .size-and-toppings{
+    height: 50%;
+}
+
+.card-body .size-and-toppings select {
+    margin-bottom: 1em;
+}
+
+.card-body .size-and-toppings span {
+    text-align: right;
+}
+
+.card-body .size-and-toppings label {
+    font-size: .9em;
+}
+
+.card-body .footer {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .form-check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .ingredients {
+    font-size: .8em;
+    color: dimgray;
+}
+
+aside {
+    width: 25%;
+    position: sticky;
+    height: fit-content;
+    top: 100px;
+    display: none;
+    border-radius: 0 0 0 15px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+}
+
+aside h5,
+aside .delivery-and-total-price {
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+.delivery-and-total-price {
+    border-radius: inherit;
+}
+
+.order {
+    padding: 0 1em;
+}
+
+.order li {
+    padding: .5em 0;
+}
+
+.ordered-pizza {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.ordered-size,
+.ordered-topping {
+    margin: 0;
+}
+
+.ordered-size span {
+    font-weight: 500;
+}
+
+.buy-all {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+}
