@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    position: absolute;
+    left: calc(50vw - 50px);
+    top: calc(50vh - 50px);
+}
+
+body {
+    position: relative;
+}

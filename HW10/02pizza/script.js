@@ -202,7 +202,7 @@ window.onload = () => {
 
     createCard(
         "Пицца Кантри",
-        "margarita",
+        "country",
         ["Лук", "бекон", "ветчина", "грибы", "моцарелла", "огурцы маринованные", "соус чесночный"],
         "./img/country.jpg",
         smallSizePrices.country
@@ -289,44 +289,6 @@ window.onload = () => {
         }
 
         orderList.appendChild(li);
-        // const pickup = document.createElement("div");
-        // pickup.className = "form-check";
-        // const pickupInput = document.createElement("input");
-        // pickupInput.className = "form-check-input";
-        // pickupInput.type = "radio";
-        // pickupInput.name = "flexRadioDefault";
-        // pickupInput.id = "pickup";
-        // pickupInput.checked = true;
-        // pickup.appendChild(pickupInput);
-        // const pickupLabel = document.createElement("label");
-        // pickupLabel.className = "form-check-label";
-        // pickupLabel.setAttribute("for", "pickup");
-        // pickupLabel.innerText = "Самовывоз";
-        // pickup.appendChild(pickupLabel);
-        // aside.appendChild(pickup);
-
-        // const delivery = document.createElement("div");
-        // delivery.className = "form-check";
-        // const deliveryInput = document.createElement("input");
-        // deliveryInput.className = "form-check-input";
-        // deliveryInput.type = "radio";
-        // deliveryInput.name = "flexRadioDefault";
-        // deliveryInput.id = "delivery";
-        // delivery.appendChild(deliveryInput);
-        // const deliveryLabel = document.createElement("label");
-        // deliveryLabel.className = "form-check-label";
-        // deliveryLabel.setAttribute("for", "delivery");
-        // deliveryLabel.innerText = "Доставка (+40 грн)";
-        // delivery.appendChild(deliveryLabel);
-        // aside.appendChild(delivery);
-
-        // const totalPrice = document.createElement("h3");
-
-
-
-        // totalPrice.className = "total-price";
-        // totalPrice.innerText = `Сумма: ${order.price}`;
-        // aside.appendChild(totalPrice);
 
         totalPriceArr.push(order.price);
         totalPrice.innerText = getTotalPrice() + deliveryPrice;
@@ -334,7 +296,6 @@ window.onload = () => {
 
     document.querySelector(".delivery-and-total-price").onchange = refreshTotalPrice;
 
-    //aside.onchange = refreshTotalPrice;
     let deliveryPrice = 0;
 
     function refreshTotalPrice(event) {
@@ -355,4 +316,12 @@ window.onload = () => {
             return sum;
         } else { return order.price }
     }
+
+    const myModal = document.querySelector(".modal");
+    const modal = new bootstrap.Modal(myModal);
+    const buyAllBtn = document.querySelector(".buy-all");
+    buyAllBtn.addEventListener("click", function() {
+        setTimeout(function() {
+            modal.hide()}, 5000);
+        });
 }

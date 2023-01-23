@@ -31,6 +31,47 @@ section {
     width: 30%;
 }
 
+@media (max-width: 1400px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    aside {
+        min-width: 30%;
+    }
+
+    .card {
+        width: 45%
+    }
+}
+
+@media (max-width: 450px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 2.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    aside {
+        min-width: 100%;
+    }
+}
+
 .card:hover {
     box-shadow: 0 0 25px rgb(0 0 0 / 50%);
 }
@@ -44,7 +85,7 @@ section {
     height: 35%;
 }
 
-.card-body .size-and-toppings{
+.card-body .size-and-toppings {
     height: 50%;
 }
 
