@@ -1,0 +1,63 @@
+body {
+    padding: 40px;
+}
+
+section > div span {
+    font-weight: 600;
+}
+
+section > div:not(:first-child) {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+li {
+    font-weight: 500;
+    /* padding: calc(0.4em + 1px) 1em 0.4em 1em; */
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    /* padding-top: calc(0.4em + 2px); */
+    border-inline: 1px solid rgb(207, 207, 207);
+    border-top: 1px solid rgb(207, 207, 207);
+    background-color: darkgrey; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    cursor: pointer;
+}
+
+li:not(:last-of-type) {
+    width: 80px;
+}
+
+li:last-of-type {
+    width: 40px;
+    background-color: gainsboro;
+}
+
+li:last-of-type:hover {
+    background-color: rgb(238, 236, 236);
+}
+
+.tab:not(.active):hover {
+    background-color: rgb(201, 199, 199);
+}
+
+ul .active {
+    border: 1px solid rgb(207, 207, 207);
+    border-bottom: 5px solid white;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+    background-color: white;
+    font-weight: 600;
+    margin-top: -5px;
+}
