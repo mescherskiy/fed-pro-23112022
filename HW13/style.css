@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 31%;
+    margin: 1rem auto;
+}
+
+.list-group-item span {
+    font-weight: 700;
+}
+
+.card button {
+    margin-top: 1em;
+}
