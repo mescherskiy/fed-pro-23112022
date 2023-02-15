@@ -1,0 +1,13 @@
+.contacts {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contacts p {
+    font-style: italic;
+}
+
+.contacts p span {
+    font-weight: 600;
+    font-style: normal;
+}
